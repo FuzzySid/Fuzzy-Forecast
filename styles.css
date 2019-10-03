@@ -1,24 +1,36 @@
 body{
-    background: rgba(176, 196, 222, 0.637);
+   background: #ffe57f;
+     
 }
 
 .container{
     max-width: 400px;
 }
 
+.card{
+    max-height: 800px;
+}
+
 h1{
     margin: 10px auto;
+    font-weight: bold;
     padding: 20px;
     text-align: center;
-    color: #0d47a1;
+    color: #474444ab;
     letter-spacing: 6px;
 }
 
 h5{
     text-align: center;
+    color:#474444ab;
+    font-weight: 900;
 }
 
-.form-border{
-    /* background: whitesmoke; */
-    
+.icon{
+    font-size: 20px;
+    text-align: center;
+}
+
+input,label{
+    color: white;
 }
