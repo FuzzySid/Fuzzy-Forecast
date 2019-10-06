@@ -13,7 +13,7 @@ const updateUI =data=>{
     const {cityDetails,weather}=data;
 
     cardContent.innerHTML=` <div class="details center-align">
-    <h5>${cityDetails.EnglishName}</h5>
+    <h5 style="color:black">${cityDetails.EnglishName}</h5>
     <div class="condition">${weather.WeatherText}</div>
         <div class="temperature">
         <h4>${weather.Temperature.Metric.Value}<span>&deg;C</span></h3>
