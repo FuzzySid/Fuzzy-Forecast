@@ -4,7 +4,9 @@ const cardContent=document.querySelector('.card-content');
 const time=document.querySelector('.card-image img');
 const icon=document.querySelector('.icon img');
 const background=document.querySelector('body');
+const forecast=new Forecast();
 
+//console.log(forecast);
 const updateUI =data=>{
     // const cityDetails=data.cityDetails;
     // const weather=data.weather;
@@ -43,19 +45,19 @@ const updateUI =data=>{
 
 }
 
-const updateCity=async (city)=>{
-    //console.log(city);
-    const cityDetails=await getCity(city);
-    const weather=await getWeather(cityDetails.Key);
+// const updateCity=async (city)=>{
+//     //console.log(city);
+//     const cityDetails=await getCity(city);
+//     const weather=await getWeather(cityDetails.Key);
 
-    return { cityDetails, weather }
-}
+//     return { cityDetails, weather }
+// }
 form.addEventListener('submit',e=>{
     e.preventDefault();
     const city=form.city.value.trim();
     form.reset();
 
-    updateCity(city)
+    forecast.updateCity(city)
         .then(data=>{
             updateUI(data);
         })
