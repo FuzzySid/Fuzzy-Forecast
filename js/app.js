@@ -6,11 +6,9 @@ const icon=document.querySelector('.icon img');
 const background=document.querySelector('body');
 const forecast=new Forecast();
 
-//console.log(forecast);
-const updateUI =data=>{
-    // const cityDetails=data.cityDetails;
-    // const weather=data.weather;
 
+const updateUI =data=>{
+    
     //destructuring properties
     const {cityDetails,weather}=data;
 
@@ -30,11 +28,11 @@ const updateUI =data=>{
     let timeSrc=null;
     if(weather.IsDayTime){
         timeSrc='img/day.svg';
-        // body.style.background='rgba(212, 214, 90, 0.459)';
+       
     }
     else{
         timeSrc='img/night.svg';
-        // body.style.background='seashell';
+        
     }
 
     time.setAttribute('src',timeSrc);
@@ -45,13 +43,7 @@ const updateUI =data=>{
 
 }
 
-// const updateCity=async (city)=>{
-//     //console.log(city);
-//     const cityDetails=await getCity(city);
-//     const weather=await getWeather(cityDetails.Key);
 
-//     return { cityDetails, weather }
-// }
 form.addEventListener('submit',e=>{
     e.preventDefault();
     const city=form.city.value.trim();
