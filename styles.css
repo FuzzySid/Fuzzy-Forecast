@@ -1,5 +1,5 @@
 body{
-   background: #ffe57f;
+   background: rgba(255, 127, 80, 0.795);
      
 }
 
@@ -16,13 +16,13 @@ h1{
     font-weight: bold;
     padding: 20px;
     text-align: center;
-    color: #474444ab;
+    color: #eeeeee;
     letter-spacing: 6px;
 }
 
 h5{
     text-align: center;
-    color:#474444ab;
+    color: #eeeeee;
     font-weight: 900;
 }
 
